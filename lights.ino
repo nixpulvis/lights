@@ -4,16 +4,16 @@
 #define LED_COUNT 300
 
 // The strip of addressable leds.
-Adafruit_NeoPixel leds = Adafruit_NeoPixel(LED_COUNT, PIN, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel leds = Adafruit_NeoPixel(LED_COUNT, PIN, NEO_GRB + NEO_KHZ400);
 
 void setup() {
   leds.begin();
-  leds.setBrightness(255);
+  leds.setBrightness(50);
 }
 
 
 void loop() {
-  tron(40, 2, 3);
+  tron(40, 1, 4);
   leds.show();
 }
 
